@@ -11,7 +11,8 @@ const res = await client.getEntries({
 })
 return {
   props:{
-    recipes:res.items
+    recipes:res.items,
+    revalidate:1
   }
 }
 }
